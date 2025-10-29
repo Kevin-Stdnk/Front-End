@@ -3,14 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Formulario</title>
 </head>
 <body>
 
 
-    <div class="estiloborda"></div>
+    <div class="estiloborda">
         <form action="teste.html" method="post">
-''
             <label for="nome">Nome</label>
             <br>
             <input type="text" id="nome" name="nome" required>
@@ -31,6 +30,21 @@
             <input type="text" id="assunto" name="assunto">
             <br><br>
 
+            <label for="senha">Senha</label>
+            <br>
+            <input type="password" id="senha" name="senha">
+            <br><br>
+            <table border="1" style="text-align: center;">
+                <tr>
+                    <td style="padding: 5px;"><label for="cor">Cor</label></td>
+                    <td><label for="arquivo">Arquivo</label></td>
+                </tr>
+                <tr>
+                    <td> <input type="color" id="cor" name="cor"></td>
+                    <td><input type="file" id="arquivo" name="arquivo"></td>
+                </tr>
+            </table>
+            <br>
             <label for="mensagem">Mensagem</label>
             <br>
             <textarea id="mensagem" name="mensagem" required></textarea>
@@ -45,8 +59,6 @@
         border-radius: 10px;
         padding: 10px;
         display:inline-block;
-        ;
-        
     }
 
 
