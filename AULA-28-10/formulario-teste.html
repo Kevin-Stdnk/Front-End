@@ -5,10 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario</title>
 </head>
-<body>
+<body style="font-family: Arial, Helvetica, sans-serif; margin: 0px;">
+    <header style="text-align: center; background-color: rgb(114, 114, 204); padding: 15px;">
+        <h1 style="color: white;">Formulario</h1>
+    </header>
 
-
-    <div class="estiloborda">
+    <div style="text-align: center;">
         <form action="teste.html" method="post">
             <label for="nome">Nome</label>
             <br>
@@ -34,17 +36,6 @@
             <br>
             <input type="password" id="senha" name="senha">
             <br><br>
-            <table border="1" style="text-align: center;">
-                <tr>
-                    <td style="padding: 5px;"><label for="cor">Cor</label></td>
-                    <td><label for="arquivo">Arquivo</label></td>
-                </tr>
-                <tr>
-                    <td> <input type="color" id="cor" name="cor"></td>
-                    <td><input type="file" id="arquivo" name="arquivo"></td>
-                </tr>
-            </table>
-            <br>
             <label for="mensagem">Mensagem</label>
             <br>
             <textarea id="mensagem" name="mensagem" required></textarea>
