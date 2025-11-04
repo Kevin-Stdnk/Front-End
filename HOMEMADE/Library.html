@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Livraria Online</title>
+    <link rel="icon" href="imgs/e-book.png">
+</head>
+
+<body>
+    <header style="border: solid white 35px;
+        background-color: white;
+        margin-bottom: 40px;
+        font-family: Arial, Helvetica, sans-serif;
+        display: flex;
+        justify-content: space-between;">
+        <h1 style="
+            font-size: 40px;
+            color: #f38f41;
+            background-color: white;
+            margin: 0px;
+            text-align: left;
+            padding-left: 50px;
+            ">
+            LIVRARIA DO ZÉ
+        </h1>
+        <div>
+            <a href="#carrinho" target="_self">
+                <button style="
+                        background-color: white;
+                        border: none;
+                        cursor: pointer;
+                        ">
+                    <img src="imgs/carrinho-de-compras.png" alt="" style="width: 50px;">
+                </button>
+            </a>
+        </div>
+
+    </header>
+
+    <article style="
+        display: inline-flex;
+        border: solid white 2px;
+        border-radius: 10px;
+        margin-left: 20px;
+        padding: 10px;
+        padding-right: auto;
+        width: fit-content;
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+        margin-bottom: 50px;
+        ">
+        <img src="imgs/414USaxWrtL._SR290,290_.jpg" alt="" style="
+                border-radius: 10px;
+                width: 300px;
+                ">
+        <div style="
+                max-width: 400px;
+                padding-left: 25px;
+                margin-right: 10px;
+                ">
+            <h1>BOX - LIVRO DAS MIL E UMA NOITES</h1>
+            <p style="
+                    font-size: large;
+                    ">Elit ipsum commodo deserunt sint ut duis nisi do aliqua. Incididunt nostrud culpa ea mollit
+                fugiat
+                eiusmod consectetur aliquip sunt ipsum magna. Consectetur officia non dolore id mollit mollit.</p>
+            <div style="
+                    display: flex;
+                    justify-content: space-between;
+                    ">
+                <div id="Mileumanoites"></div>
+                <button style="
+                        display: flex;
+                        margin: auto;
+                        padding: 10px;
+                        border: solid white 2px;
+                        background-color: #f38f41;
+                        border-radius: 10px;
+                        cursor: pointer;
+                        "onclick="somarCarrinho(), somarPrecoCarrinho(Preço_Livros[0])">
+                    <h1 style="margin: 0px; margin-right: 5px;">+</h1>
+                    <img src="imgs/carrinho-de-compras.png" style="
+                        justify-self: center;
+                        width: 30px;
+                        " alt="">
+                </button>
+            </div>
+        </div>
+    </article>
+
+
+
+    <article style="
+        display: inline-flex;
+        border: solid white 2px;
+        border-radius: 10px;
+        margin-left: 20px;
+        padding: 10px;
+        padding-right: auto;
+        width: fit-content;
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+        margin-bottom: 50px;
+        ">
+        <img src="imgs/7102tzlRduL._AC_UF1000,1000_QL80_.jpg" alt="" style="
+                border-radius: 10px;
+                width: 300px;
+                ">
+        <div style="
+                max-width: 400px;
+                padding-left: 25px;
+                margin-right: 10px;
+                ">
+            <h1>BOX - LIVRO HARRY POTTER</h1>
+            <p style="
+                    font-size: large;
+        
+                    ">Elit ipsum commodo deserunt sint ut duis nisi do aliqua. Incididunt nostrud culpa ea mollit
+                fugiat
+                eiusmod consectetur aliquip sunt ipsum magna. Consectetur officia non dolore id mollit mollit.</p>
+            <div style="
+                    display: flex;
+                    justify-content: space-between;
+                    ">
+                <div id="Harry"></div>
+                <button style="
+                        display: flex;
+                        margin: auto;
+                        padding: 10px;
+                        border: solid white 2px;
+                        background-color: #f38f41;
+                        border-radius: 10px;
+                        cursor: pointer;
+                        " onclick="somarCarrinho(), somarPrecoCarrinho(Preço_Livros[1])">
+                    <h1 style="margin: 0px; margin-right: 5px;">+</h1>
+                    <img src="imgs/carrinho-de-compras.png" style="
+                        justify-self: center;
+                        width: 30px;
+                        " alt="">
+                </button>
+            </div>
+        </div>
+    </article>
+
+
+
+
+
+    <article style="
+        display: inline-flex;
+        border: solid white 2px;
+        border-radius: 10px;
+        margin-left: 20px;
+        padding: 10px;
+        padding-right: auto;
+        width: fit-content;
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+        margin-bottom: 25px;
+        ">
+        <img src="imgs/28178683.jpg" alt="" style="
+                border-radius: 10px;
+                width: 300px;
+                ">
+        <div style="
+                max-width: 400px;
+                padding-left: 25px;
+                margin-right: 10px;
+                ">
+            <h1>BOX - 50 TONS</h1>
+            <p style="
+                    font-size: large;
+        
+                    ">Elit ipsum commodo deserunt sint ut duis nisi do aliqua. Incididunt nostrud culpa ea mollit
+                fugiat
+                eiusmod consectetur aliquip sunt ipsum magna. Consectetur officia non dolore id mollit mollit.</p>
+                <br>
+                <br>
+            <div style="
+                    display: flex;
+                    justify-content: space-between;
+                    ">
+                <div id="50tons"></div>
+                <button style="
+                        display: flex;
+                        margin: auto;
+                        padding: 10px;
+                        border: solid white 2px;
+                        background-color: #f38f41;
+                        border-radius: 10px;
+                        cursor: pointer;
+                        " onclick="somarCarrinho(), somarPrecoCarrinho(Preço_Livros[2])">
+                    <h1 style="margin: 0px; margin-right: 5px;">+</h1>
+                    <img src="imgs/carrinho-de-compras.png" style="
+                        justify-self: center;
+                        width: 30px;
+                        " alt="">
+                </button>
+            </div>
+        </div>
+    </article>
+
+    <section id="carrinho" style="
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    margin-left: 20px;
+    padding: 10px;
+    ">
+
+        <h1 style="margin: 0px;">- TOTAL DO CARRINHO - </h1>
+        <div style="
+      margin: 0px;
+      display: inline-flex;
+      gap: 10px;
+      ">
+            <h3> Total de itens - </h3>
+            <div id="somacarrinho">
+                <h3>0</h3>
+            </div>
+        </div>
+        <br>
+        <div style="
+      margin: 0px;
+      display: inline-flex;
+      gap: 10px;
+      ">
+            <h3> Preço do Carrinho - R$</h3>
+            <div id="somaPrecoCarrinho">
+                <h3>0</h3>
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+
+</body>
+<style>
+    body {
+        background-color: #f38f41;
+        margin: 0px;
+    }
+
+    a {
+        text-decoration: none;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+</style>
+
+<script>
+    var Carrinho = 0
+    var ValorCarrinho = 0
+    function somarCarrinho() {
+        Carrinho = Carrinho + 1
+        document.getElementById('somacarrinho').innerHTML = `<h3>${Carrinho}</h3>`
+    }
+    function somarPrecoCarrinho(Preço) {
+        ValorCarrinho = ValorCarrinho + Preço
+        document.getElementById('somaPrecoCarrinho').innerHTML = `<h3>${ValorCarrinho.toFixed(2)}</h3>`
+    }
+
+    var Preço_Livros = [69.90, 99.99, 49.50]
+
+    document.getElementById('Mileumanoites').innerHTML = ` <h1>PREÇO - R$ ${Preço_Livros[0].toFixed(2)}</h1>`
+
+    document.getElementById('Harry').innerHTML = ` <h1>PREÇO - R$ ${Preço_Livros[1].toFixed(2)}</h1>`
+
+    document.getElementById('50tons').innerHTML = ` <h1>PREÇO - R$ ${Preço_Livros[2].toFixed(2)}</h1>`
+
+</script>
+
+
+</html>
