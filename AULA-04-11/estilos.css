@@ -1,0 +1,40 @@
+body{
+    background-color: rgb(0, 0, 0);
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+.titulocabeca{
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border: solid white 2px;
+    border-radius: 15px;
+    margin-top: 50px;
+}
+.alinhamento{
+    justify-self: center;
+}
+.mundogiga{
+    display: inline-block;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+    font-size: 300px;
+}
+.divlegal{
+    display: block;
+    text-align: center;
+    justify-self: center;
+    border: solid white 2px;
+    border-radius: 15px;
+    padding: 20px;
+}
+.botao{
+    border: solid white 2px;
+    padding: 20px;
+    background-color: black;
+    color: white;
+    border-radius: 15px;
+}

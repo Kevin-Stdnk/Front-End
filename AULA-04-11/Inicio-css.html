@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TESTE CSS</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="icon" href="imgs/css-3.svg">
+</head>
+<body>
+    <div class="alinhamento">
+        <header>
+            <h1 class="titulocabeca">Olá mundinho pequeno</h1>
+        </header>
+    </div>
+    <div class="alinhamento" style="text-align: center;">
+        <div class="divlegal" style="margin-bottom: 20px;">
+        <div id="mundinho" class="tamanhoGiga">
+        </div>
+            <h3 class="tamanhoMin"><b>Planet Earth</b></h3>
+        </div>
+        <button class="botao" type="button" onclick="explosao()" style="cursor: pointer;"><b>EXPLODIR?</b></button>
+    </div>
+</body>
+<style>
+.tamanhoGiga{
+    font-size: 300px;
+    margin: 0px;
+}
+.tamanhoMin{
+    font-size: 25px
+}
+</style> 
+<script>
+    var mundoantes = '🌎';
+    var mundodps = '💥';
+    document.getElementById('mundinho').innerHTML = mundoantes;
+    function explosao(){
+        document.getElementById('mundinho').innerHTML = mundodps;
+    }
+
+</script>
+
+</html>
