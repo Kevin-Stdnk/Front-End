@@ -1,0 +1,31 @@
+body{
+    font-family: "Quicksand", sans-serif;
+    margin: 0px;
+    background-color: rgb(202, 215, 252) ;
+}
+
+
+.cabeçalho{
+    display: block;
+    justify-content: left;
+    background-color: rgb(255, 255, 255);
+    border: solid white 2px;
+    padding-bottom:20px;
+    padding-left: 20px;
+}
+.nav{
+    margin: 0px;;
+    display: inline-block;
+    font-weight: bold;
+}
+.Titulo{
+    font-family: "Momo Trust Display", sans-serif;
+    font-size: 75px;
+    margin: 0px;
+    padding-top: 20px;
+    font-style: italic;;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
