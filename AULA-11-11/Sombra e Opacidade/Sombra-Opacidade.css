@@ -4,11 +4,18 @@ body{
     margin: 0px;
 }
 
+header{
+    box-shadow: 0px 10px 5px rgb(0, 0, 0, 0.5);
+}
+
 .titulo{
     font-size: 75px;
     text-align: center;
     padding: 10px;
     border-bottom: solid black 2px;
+    text-shadow: 5px 5px 1px palevioletred, -1px -5px 1px blue;
+    opacity: 1;
+    
 }
 
 .section{
@@ -34,7 +41,10 @@ body{
 .img1{
     box-shadow: 10px 10px 0px rgb(0, 0, 0)
 }
-
+.img3{
+    opacity: 0.5;
+    box-shadow: 5px 5px 0px black;
+}
 p{
     font-size: large;
 }
