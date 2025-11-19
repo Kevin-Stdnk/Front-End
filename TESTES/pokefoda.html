@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Qual pokemon voce quer?</h1>
+    <h2>(id)</h2>
+    <div class="center">
+        <input type="" id="idpokemon">
+        <button type="submit" onclick="pokepoke()">PROCURAR</button>
+    </div>
+    <div id="fotopoke"></div>
+</body>
+<script>
+    function pokepoke(){
+    var id = document.getElementById('idpokemon').value
+    fetch('https://pokeapi.co/api/v2/pokemon/'+id)
+    .then(res => res.json())
+        .then(data => {
+            console.log(data)
+            document.getElementById('fotopoke').innerHTML =
+            '<img src="'+data.sprites.front_default +'" width="300">'
+        })
+    }
+</script>
+
+<style>
+    body{
+        font-family: Arial, Helvetica, sans-serif
+    }
+    h1{
+        text-align: center;
+    }
+    h2{
+        text-align: center;
+    }
+    input{
+        text-align: center;
+    }
+    div{
+        display: flex;
+        justify-self: center;
+    }
+</style>
+
+</html>
