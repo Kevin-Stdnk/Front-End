@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="titulo">
+            <h1>CALCULADORA 3000</h1>
+        </div>
+    </header>
+    <section id="numselect">
+        <div class="numselectdiv">
+            <div class="center">
+                <label for="num1">NUMERO 1</label>
+                <br>
+                <input type="number" id="num1">
+            </div>
+
+            <div class="center">
+                <label for="num2">NUMERO 2</label>
+                <br>
+                <input type="number" id="num2">
+            </div>
+        </div>
+    </section>
+    <section id="operacoes" class="operacoes">
+        <button onclick="operacao('+')">+</button>
+        <button onclick="operacao('-')">-</button>
+        <button onclick="operacao('*')">*</button>
+        <button onclick="operacao('/')">/</button>
+        <button onclick="operacao('resto')">%</button>
+        <button onclick="operacao('exp')">^</button>
+    </section>
+    <section>
+        <div id="resultado" class="resultado"></div>
+    </section>
+</body>
+<style> 
+    :root{
+        --cortexto: rgb(50,50,50) ;
+        --corbackground: white;
+    }
+ header{
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);;
+    padding: 10px;
+    margin-bottom: 40px;
+ }
+ body{
+    background-color: var(--corbackground);
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--cortexto);
+    margin: 0px;
+ }
+ .titulo{
+    display: block;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+ }
+.numselectdiv{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    justify-self: center;
+    margin-bottom: 40px;
+}
+.center{
+    text-align: center;
+    font-size: large;
+}
+.operacoes{
+    display: flex;
+    justify-self: center;
+    gap: 30px;
+}
+.resultado{
+    text-align: center;
+}
+button{
+    background-color: var(--corbackground);
+    border-style: none;
+    border: solid black 1px;
+    padding: 10px;
+    box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.5);
+    color: var(--cortexto);
+    border-radius: 5px;
+    }
+input{
+    background-color: var(--corbackground);
+    border-style: none;
+    border: solid black 1px;
+    padding: 10px;
+    box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.5);
+    color: var(--cortexto);
+    border-radius: 5px;
+    }
+</style>
+<script src="JS.js"></script>
+</html>
