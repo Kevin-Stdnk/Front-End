@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de endereço</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="style1">
+        <h1 class="title">Cadastro de endereço</h1>
+           <div class="center">
+           <div class="cadastration">
+               <div>
+                <label for="cep">Digite seu cep</label>
+                <br>
+                <input type="text" id="cep">
+               </div>
+        
+               <div>
+                <label for="log">Logradouro</label>
+                <br>
+                <input type="text" id="log">
+               </div>
+               <div>
+                <label for="bairro">Bairro</label>
+                <br>
+                <input type="text" id="bairro">
+               </div>
+               <div>
+                <label for="city">Cidade</label>
+                <br>
+                <input type="text" id="city">
+               </div>
+               <div>
+                <label for="estado">Estado</label>
+                <br>
+                <input type="text" id="estado">
+               </div>
+           </div>
+           </div>
+    </div>
+</body>
+
+<script>
+    var cep = document.getElementById('cep');
+    cep.addEventListener('blur', function(){
+        var cepvalor = cep.value
+        fetch('https://viacep.com.br/ws/'+cepvalor+'/json')
+        .then(res => res.json())
+        .then(data => {
+            console.log(data)
+            document.getElementById('log').value = data.logradouro
+            document.getElementById('bairro').value = data.bairro
+            document.getElementById('city').value = data.localidade
+            document.getElementById('estado').value = data.estado
+        })
+    });
+</script>
+
+</html>
