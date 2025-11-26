@@ -4,11 +4,18 @@ var numeros = []
 var i = 0
 var somar = 0
 var subtrair = 0
+var div = 0
+var mult = 0
+var rest = 0
+var exp = 0
 var conta_final
 document.getElementById('visor').innerHTML = visor;
 
 function addnum(num){
     if(firstnum == 1){
+        if(num == '.'){
+            visor = '0.'
+        }
         if(num == 0){
             return
         }
@@ -34,7 +41,27 @@ function operacao(operacao){
             console.log('somou')
         break
         case '-':
-            subtrair = 0
+            subtrair = 1
+            console.log('sub')
+        break
+        case '*':
+            mult = 1
+            console.log('sub')
+        break
+        case '/':
+            div = 1
+            console.log('sub')
+        break
+        case '^':
+            exp = 1
+            console.log('sub')
+        break
+        case '%':
+            rest = 1
+            console.log('sub')
+        break
+        case 'CE':
+            numeros = 0
             console.log('sub')
         break
     }
@@ -48,9 +75,29 @@ function finalizar(){
         conta_final = numeros[0] + numeros[1]
         console.log('somou dnv')
     }
-    else if(subtrair==0){
+    else if(subtrair==1){
         conta_final = numeros[0] - numeros[1]
         console.log('sub dnv')
     }
+    else if(mult==1){
+        conta_final = numeros[0] * numeros[1]
+        console.log('sub dnv')
+    }
+    else if(div==1){
+        conta_final = numeros[0] / numeros[1]
+        console.log('sub dnv')
+    }
+    else if(exp==1){
+        conta_final = numeros[0] ** numeros[1]
+        console.log('sub dnv')
+    }
+    else if(rest==1){
+        conta_final = numeros[0] % numeros[1]
+        console.log('sub dnv')
+    }
+
+
+
+
     document.getElementById('visor').innerHTML = conta_final
 }
