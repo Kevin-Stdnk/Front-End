@@ -5,9 +5,9 @@ fetch("Json/chochorros.json")
 .then(res =>res.json())
 .then(data =>{
     chochorro = data
-    teste(chochorro)
+    showonScreen(chochorro)
     })
-    function teste(lista){
+    function showonScreen(lista){
          const container = document.getElementById("testesec");
     container.innerHTML = "";
 
