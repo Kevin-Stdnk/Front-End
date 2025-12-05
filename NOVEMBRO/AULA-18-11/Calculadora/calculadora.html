@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+        <h1 id="visor"></h1>
+    </div>
+    <div id="numeros">
+        <div>
+            <button id="9" onclick="addnum('9')">9</button>
+            <button id="8" onclick="addnum('8')">8</button>
+            <button id="7" onclick="addnum('7')">7</button>
+            <button id="+" onclick="operacao('+')">+</button>
+            <button id="+" onclick="operacao('*')">*</button>
+            <button id="+" onclick="operacao('^')">^</button>
+        </div>
+
+        <div>
+            <button id="6" onclick="addnum('6')">6</button>
+            <button id="5" onclick="addnum('5')">5</button>
+            <button id="4" onclick="addnum('4')">4</button>
+            <button id="-" onclick="operacao('-')">-</button>
+            <button id="-" onclick="operacao('/')">/</button>
+            <button id="-" onclick="operacao('%')">%</button>
+        </div>
+
+        <div>
+            <button id="3" onclick="addnum('3')">3</button>
+            <button id="2" onclick="addnum('2')">2</button>
+            <button id="1" onclick="addnum('1')">1</button>
+        </div>
+
+        <div>
+            <button id="✅" onclick="finalizar()" >✅</button>
+            <button id="0" onclick="addnum('0')">0</button>
+            <button id="." onclick="addnum('.')">.</button>
+            <button id="-" onclick="operacao('CE')">CE</button>
+        </div>
+
+    </div>
+
+    <div>
+        <h1 id="teste"></h1>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>

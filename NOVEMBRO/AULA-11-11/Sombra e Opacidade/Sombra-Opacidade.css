@@ -1,0 +1,50 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: snow;
+    margin: 0px;
+}
+
+header{
+    box-shadow: 0px 10px 5px rgb(0, 0, 0, 0.5);
+}
+
+.titulo{
+    font-size: 75px;
+    text-align: center;
+    padding: 10px;
+    border-bottom: solid black 2px;
+    text-shadow: 5px 5px 1px palevioletred, -1px -5px 1px blue;
+    opacity: 1;
+    
+}
+
+.section{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin: 25px;
+    padding: 25px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.425);
+}
+.allsection{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.img2{
+    box-shadow: 10px 10px 10px rgb(0, 0, 0)
+}
+.img1{
+    box-shadow: 10px 10px 0px rgb(0, 0, 0)
+}
+.img3{
+    opacity: 0.5;
+    box-shadow: 5px 5px 0px black;
+}
+p{
+    font-size: large;
+}
