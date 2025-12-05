@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CACHORROS</title>
+</head>
+<body>
+    <header>
+        <h1> CACHORROS </h1>
+    </header>
+    <div class="teste2">
+        <section id="loadDogs" class="list"></section>
+    </div>
+        <div class="teste">
+            <h1>Formulário</h1>
+            <label for="nomeedit">Nome</label>
+            <input type="text" id="nomeedit">
+            <br>
+            <label for="racaedit">Raça</label>
+            <input type="text" id="racaedit">
+            <br>
+            <label for="idadeedit">Idade</label>
+            <input type="text" id="idadeedit">
+            <br>
+            <label for="porteedit">Porte</label>
+            <input type="text" id="porteedit">
+            <br>
+            <label for="sexoedit">Sexo</label>
+            <input type="text" id="sexoedit">
+            <br>
+            <button id="enviar" type="submit" onclick="edit()">ENVIAR</button>
+            <button id="enviar" type="submit" onclick="createnew()">CRIAR NOVO</button>
+            
+        </div>
+</body>
+    <style>
+        .teste2{
+            width: calc(100% - 300px);
+            margin: 0px;
+        }
+        .teste2>section{
+            margin: 20px;
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+        .teste{
+            display: block;
+            position: fixed;
+            right: 0;
+            top: 0;
+            border: solid black 2px;
+            width: 300px;
+            height: 100%;
+        }
+        .list{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .list>div{
+            border: solid black 2px;
+            width: 300px;
+            padding: 20px;
+            padding-top: 10px;
+        }
+        .tittle{
+            text-align: center;
+        }
+        .center{
+            text-align: center;
+        }
+
+    </style>
+    <script src="cachorro.js"></script>
+</html>
