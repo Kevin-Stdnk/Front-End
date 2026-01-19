@@ -1,6 +1,11 @@
 body{
     background-color: rgb(27, 24, 24);
 }
+h1{
+    color: white;
+    text-align: center;
+    font-family: "Bebas Neue", sans-serif;
+}
 .titulos>h1{
     color: white;
     text-align: center;
@@ -40,4 +45,33 @@ button:hover{
     color: white;
     cursor: pointer;
     padding: 15px;
+} 
+.caca-niqueis{
+    position: relative;
+    justify-self: center;
+}
+.caca-niqueis>img{
+    width: 700px;
+}
+.center1{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 33%;
+    left: 22.5%;
+}
+.center2{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 33%;
+    left: 50%;
+    transform: translate(-50%);
+}
+.center3{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 33%;
+    right: 22.5%;
 }
