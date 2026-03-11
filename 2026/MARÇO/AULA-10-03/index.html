@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Filmes</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-4.0.0.js"></script>
+    <script>
+        $(function() {
+            $("#addbox").hide();
+        });
+        $(document).ready(function() {
+            $("#addFilme").click(function(){
+                $("#addbox").show();
+                $("body > *").not("#addbox").css({"filter":"blur(10px)","transition":"0.1s"})
+            })
+            $("#btnMostrar").click(function(){
+                $("#listarFilmes").show();
+            });
+
+            $("#btnOcultar").click(function(){
+                $("#listarFilmes").hide();
+
+            });
+            
+            $(".filme").hover(function(){
+                 $(this).css({"margin-left":"calc(var(--margin) * 2)","margin-right":"calc(var(--margin) * 2)"})
+            },
+            function(){
+                $(this).css({"margin":"var(--margin)","transition":"0.5s"})
+            })
+            $("#add").click(function(){
+                var nome = $("#nome").val();
+                var categoria = $("#categoria").val();
+                var divfilme = 
+                `<div class="filme ${categoria.toLowerCase()}">
+                <h3>${nome}</h3>
+                <p>Categoria: ${categoria}</p>`
+                $("#listarFilmes").append(divfilme);
+                $("body > *").not("#addbox").css({"filter":"blur(0px)","transition":"0.1s"})
+                $("#addbox").hide();
+            });
+
+
+        })
+    </script>
+</head>
+<body>
+    <h1>Catálogo de Filmes</h1>
+
+    <button id="btnMostrar">Mostrar filmes</button>
+    <button id="btnOcultar">Ocultar filmes</button>
+    <button id="addFilme">Adicionar filmes</button>
+
+    <div id="addbox">
+        <h1>Adicionar filme</h1>
+        <form action="">
+            <input type="text" placeholder="Nome do filme" id="nome">
+            <br>
+            <input type="text" placeholder="Categoria" id="categoria">
+            <br>
+            <button type="button" id="add">Adicionar</button>
+        </form>
+    </div>
+
+    <div id="listarFilmes">
+        <div class="filme acao">
+            <h3>Velozes e Furiosos</h3>
+            <p>Categoria: Ação</p>
+        </div>
+        <div class="filme ficcao">
+            <h3>Interestelar</h3>
+            <p>Categoria: Ficção</p>
+        </div>
+        <div class="filme animacao">
+            <h3>Toy Story</h3>
+            <p>Categoria: Animaçao</p>
+        </div>
+    </div>
+
+
+</body>
+
+
+
+
+
+</html>
